@@ -1,0 +1,258 @@
+body{
+	background-color: #151515;
+	color: white;
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+	line-height: 1.3em;
+}
+
+b{
+	font-weight: 300;
+}
+
+a{
+	text-decoration: none;
+	color: #009ca6;
+}
+
+a:hover{
+	color: #009ca6;
+	text-decoration: underline;
+}
+
+p{ 
+	margin:0;
+}
+
+b{
+	font-weight: 600;
+}
+
+h1, h2{
+	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	margin: 0; 
+	font-weight: 400;
+	padding-top: .2em;
+	padding-bottom: .2em;  
+}
+
+.header h2{
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h3, h4, h5, h6{
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	text-decoration: none;
+	margin:0;
+	padding-top: .1em;
+	padding-bottom: .1em; 
+}
+
+h1{
+	font-weight: 300;
+}
+
+h2, h3, h4, h5, h6{
+
+	font-weight: 100;
+}
+
+@media (max-width: 640px) {
+	.header{
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	.maincontent{
+		max-width: 300px;
+		margin: auto;
+		margin-top: 1.5em;
+	}
+	.arrow{
+		visibility: hidden;
+	}
+}
+
+@media (min-width: 641px) {
+	.header{
+		padding-left: 23%;
+		padding-right: 23%;
+	}
+	.maincontent{
+		margin-top: 1.5em;
+		margin-right: 23%;
+		margin-left: 23%;
+	}
+}  
+
+.namenav{
+		border: 2px solid;
+		border-color: transparent;
+		padding-right: .5em;
+		padding-top: .5em;
+		padding-bottom: .5em;
+		font-size: 2em;
+		font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		float: left;
+		display: inline;
+	}
+
+#mission{
+	padding-top: 1em;
+}
+
+.header{
+	margin: 0;
+	background-color: #009ca6;
+	color: white;
+	background-image: url("../img/pattern-blue.jpg");
+}
+
+.header a{
+	color: white;
+}
+
+
+.navbar{
+	list-style: none;
+	display: inline;
+	float: left;
+	list-style-type: none;
+    padding: 0;
+    margin-bottom: 0px;
+}
+
+.navbar a{
+	color: white;
+	text-decoration: none;
+}
+
+.navbar a:visted{
+	color: white;
+}
+
+.navbar a:hover{
+	text-decoration: underline;
+	color: white;
+}
+
+.navbar li{
+	float: left;
+	margin-top: 0px;
+	margin-right: .5em;
+	margin-bottom: 1em;
+}
+
+.selectedpage{
+	border: 2px solid white;
+	padding: .5em;
+	font-weight: 400;
+}
+
+.unselectedpage{
+	border: 2px solid;
+	border-color: transparent;
+	padding: .5em;
+}
+
+.grid span{
+	padding: 1em;
+	display:block;
+	max-width: 300px;
+	width: 100%;
+	color: white;
+	background-color: #009ca6;
+}
+
+.arrow{
+	margin-top: 20%;
+	position: fixed;
+	color: white;
+	background-color: #009ca6;
+	padding: 3em;
+	opacity: .8;
+}
+
+.rightarrow{
+	right: 0px;
+}
+
+.leftarrow{
+	left: 0px;
+}
+
+.arrow:hover{
+	opacity: 1.0;
+}
+
+.projectinfo hr{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.projectinfo{
+	margin-bottom: 1em;
+}
+
+.projectinfo p{
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
+
+.about p{
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
+
+.moreinfo{
+	margin-left: -1em;
+	margin-right: -1em;
+}
+
+.returnbutton{
+	text-align: center;	
+	padding-bottom: 1em;
+}
+
+#centertitle{
+	text-align: center;
+}
+
+#lablogo{
+	padding-top: 1em;
+}
+
+@media (max-width: 768px) {
+	#aboutp{
+		margin-top: 1em;
+	}
+}
+
+.centeredlabel{
+	text-align: center;
+}
+
+.caption p{
+	margin-top: 20em;
+	margin-bottom: 1em;
+}
+
+.sidelabel{
+	margin-top: 2em;
+}
+
+.addedtopmargin img{
+	margin-top: 1.5em;
+	margin-bottom: .5em;
+}
+
+#topspace{
+	margin-top: 1em;
+}
+
+.bottommargin{
+	margin-bottom: 1em;
+}
