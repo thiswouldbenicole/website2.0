@@ -9,6 +9,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<title>Nicole Calace</title>
 	</head>
 
@@ -19,10 +20,11 @@
 		</div>
 
 		<a href="rosieapp.html"> <div class="arrow leftarrow"> < </div> </a>
+		<a href="robotics.html"> <div class="arrow rightarrow"> > </div> </a>
 
 		<div class="header" id="links">
 			<ul class="navbar">
-				<li> <div class="selectedpage"> <a href="index.html">ux design</a> </div> </li>
+				<li> <div class="selectedpage"> <a href="index.html">product design</a> </div> </li>
 				<li> <div class="unselectedpage"> <a href="graphicdesign.html">graphic design</a> </div> </li>
 				<li> <div class="unselectedpage"> <a href="about.html">about</a> </div> </li>
 			</ul>
@@ -30,30 +32,26 @@
 		</div>
 
 		<div class="maincontent projectinfo">
-			<h1>WingIt - Hackathon Project</h1>
+			<h1>WingIt</h1>
 			<h2>UX Designer</h2>
 			<h3>December 2012</h3>
+			<p> WingIt was conceived and built in 8 hours during the 2013 API Hackday NY. This webapp is designed to connect people with similar interests to work on projects together. I worked mostly on visual design. In retrospect, the project was full of interaction design flaws, but I learned a lot from this project.</p>
 
-			<hr>
-			<div class="row">
-				<div class="moreinfo large-7 columns">
-					<h2>Interaction Design</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus nisl eget nulla aliquet tincidunt. Aenean tristique lobortis justo, non venenatis nulla laoreet vitae. In eget fringilla dolor. Maecenas pellentesque aliquam sapien sed egestas. Donec a lobortis ante. Suspendisse viverra ipsum a quam aliquam, nec imperdiet elit accumsan. Suspendisse sodales quis eros ut sollicitudin. Quisque ipsum nibh, malesuada lacinia congue vel, porta at eros. Nullam et nibh a sapien bibendum tempus.</p>
-				</div>
-				<div class="large-5 columns">
-					<img src="../img/.jpg">
-				</div>
-				
-			</div>
-			
 			<hr>
 
 			<div class="row">
-				<div class="moreinfo large-7 columns">
+				<div class="moreinfo large-12 columns">
 					<h2>Visual Design</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus nisl eget nulla aliquet tincidunt. Aenean tristique lobortis justo, non venenatis nulla laoreet vitae. In eget fringilla dolor. Maecenas pellentesque aliquam sapien sed egestas. Donec a lobortis ante. Suspendisse viverra ipsum a quam aliquam, nec imperdiet elit accumsan. Suspendisse sodales quis eros ut sollicitudin. Quisque ipsum nibh, malesuada lacinia congue vel, porta at eros. Nullam et nibh a sapien bibendum tempus.</p>
 				</div>
-				<div class="large-5 columns">
+			</div>
+
+			<div class="row">
+				<div class="large-12 columns moreinfo large-centered small-centered">
+					<ul class="large-block-grid-1 moreinfo" id="topspace">
+							<li><img src="../img/wingit/wingit-homescreen.png"> <div class="centeredlabel"><p><i>Home Page</i></p></div><p>This is the first screen a user will see when they come across the Wingit website, which explains the purpose of the web app. <p></li>
+							<li><img src="../img/wingit/wingit-discover.png"> <div class="centeredlabel"><p><i>Event Discovery Page</i></p></div><p>After signing up with WingIt, users can find events and projects happening around them on the “discover page.” For the sake of time, we had a predefined mile radius to define what was “local,” and did not implement a search feature. Circles in the right hand corner of each event card signify how many people are needed to make the event happen. Filled in circles represent filled slots, and empty circles represent empty slots for the projects/events. </p></li>
+							<li><img src="../img/wingit/wingit-eventcreation.png"> <div class="centeredlabel"><p><i>Event Creation Page</i></p></div><p>The “create” page allows a user to create a new event or project they would like people to join via WingIt. A giant interaction design flaw of the pictured system was that there was no way to have more or less than four attendees. A way to get around this would be to have only one blank “role here” section, and a plus sign that allowed users to make as many roles they wanted for the project.</p></li>
+					</ul>
 				</div>
 			</div>
 			
@@ -62,7 +60,25 @@
 			<div class="returnbutton">
 				<p><a href="index.html">return to portfolio</a></p>
 			</div>
+
 		</div>
+
+	<script>
+		$(function(){ // document ready
+		  var stickyTop = $('#links').offset().top; // returns number 
+		  $(window).scroll(function(){ // scroll event  
+		    var windowTop = $(window).scrollTop(); // returns number
+		    if (stickyTop < windowTop) {
+		      $('#links').css({ position: 'fixed', top: 0 });
+		      $('.maincontent').css({ marginTop: '5em'});
+		    }
+		    else {
+		      $('#links').css('position','static');
+		      $('.maincontent').css({ marginTop: '1.5em'});
+		    }
+		  });
+		});
+	</script>
 
 	</body>
 </html>

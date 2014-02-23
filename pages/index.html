@@ -9,6 +9,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<title>Nicole Calace</title>
 	</head>
 
@@ -19,22 +20,40 @@
 		</div>
 		<div class="header" id="links">
 			<ul class="navbar">
-				<li> <div class="selectedpage"> <a href="index.html">ux design</a> </div> </li>
+				<li> <div class="selectedpage"> <a href="index.html">product design</a> </div> </li>
 				<li> <div class="unselectedpage"> <a href="graphicdesign.html">graphic design</a> </div>
 				<li> <div class="unselectedpage"> <a href="about.html">about</a> </div> </li>
 			</ul>
 			<div style="clear:both;"></div>		
 		</div>
 
-		<div class="maincontent">
+		<div class="maincontent" id="homecontent">
 			<ul class="grid small-block-grid-1 medium-block-grid-2 large-block-grid-3">
 				<li> <a href="kickit.html"> <img src="../img/covers/kick.it-cover.png"> <span> <b><h3>UX Designer</h3></b> <p> Kick.it </p> </span> </a> </li>
 				<li> <a href="pact.html"> <img src="../img/covers/goaltracking-cover.png"> <span> <h3>UX Design Lead</h3> <p> Achieve </p> </span> </a> </li> 
-				<li> <a href="lab126.html"> <img src="../img/covers/lab126-cover.png"> <span> <h3>UX Design Intern</h3> <p> Amazon - Lab126</p> </span> </a> </li> 
+				<li> <a href="lab126.html"> <img src="../img/covers/lab126-cover.png"> <span> <h3>UX Design Intern</h3> <p> Amazon Lab126</p> </span> </a> </li> 
 				<li> <a href="rosieapp.html"> <img src="../img/covers/RosieApp-cover.png"> <span> <h3>UX Designer</h3> <p> RosieApp </p> </span> </a> </li>
-				<li> <a href="wingit.html"> <img src="../img/covers/wingit-cover.png"> <span> <h3>UX Designer</h3> <p> WingIt - Hackathon Project </p> </span> </a> </li>   
+				<li> <a href="wingit.html"> <img src="../img/covers/wingit-cover.png"> <span> <h3>UX Designer</h3> <p> WingIt</p> </span> </a> </li>
+				<li> <a href="robotics.html"> <img src="../img/covers/first-robotics-cover.png"> <span> <h3>Captain</h3> <p>The Fe Maidens</p> </span> </a> </li>   
 			</ul>
 		</div>
+
+	<script>
+		$(function(){ // document ready
+		  var stickyTop = $('#links').offset().top; // returns number 
+		  $(window).scroll(function(){ // scroll event  
+		    var windowTop = $(window).scrollTop(); // returns number
+		    if (stickyTop < windowTop) {
+		      $('#links').css({ position: 'fixed', top: 0 });
+		      $('.maincontent').css({ marginTop: '5em'});
+		    }
+		    else {
+		      $('#links').css('position','static');
+		      $('.maincontent').css({ marginTop: '1.5em'});
+		    }
+		  });
+		});
+	</script>
 
 	</body>
 </html>

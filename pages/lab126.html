@@ -9,6 +9,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<title>Nicole Calace</title>
 	</head>
 	
@@ -22,7 +23,7 @@
 
 		<div class="header" id="links">
 			<ul class="navbar">
-				<li> <div class="selectedpage"> <a href="index.html">ux design</a> </div> </li>
+				<li> <div class="selectedpage"> <a href="index.html">product design</a> </div> </li>
 				<li> <div class="unselectedpage"> <a href="graphicdesign.html">graphic design</a> </div> </li>
 				<li> <div class="unselectedpage"> <a href="about.html">about</a> </div> </li>
 			</ul>
@@ -39,10 +40,10 @@
 			<div class="row">
 				<div class="moreinfo large-7 columns">
 					<p>I spent the summer of 2013 interning as a user experience designer for Amazon.com's consumer electronics research and development lab, <a href="http://lab126.com">Lab126</a>. </p>
-					<p>I worked on interaction and visual design of a future product idea with a small team of designers. I created wireframes, designed workflows and made visual comps. For my self-governed intern project, I designed a new feature for the product. </p>
+					<p>I worked on interaction and visual design of a product idea with a small team of designers. I created wireframes, designed workflows and made visual comps. For my self-governed intern project, I designed a new feature for the product. </p>
 				</div>
 				<div class="moreinfo large-5 columns" id="lablogo">
-					<img src="../img/lab126_logo.png">
+					<img class="medremove" src="../img/lab126_logo.png">
 				</div>			
 			</div>
 
@@ -53,6 +54,23 @@
 			</div>
 			
 		</div>
+
+	<script>
+		$(function(){ // document ready
+		  var stickyTop = $('#links').offset().top; // returns number 
+		  $(window).scroll(function(){ // scroll event  
+		    var windowTop = $(window).scrollTop(); // returns number
+		    if (stickyTop < windowTop) {
+		      $('#links').css({ position: 'fixed', top: 0 });
+		      $('.maincontent').css({ marginTop: '5em'});
+		    }
+		    else {
+		      $('#links').css('position','static');
+		      $('.maincontent').css({ marginTop: '1.5em'});
+		    }
+		  });
+		});
+	</script>
 
 	</body>
 </html>

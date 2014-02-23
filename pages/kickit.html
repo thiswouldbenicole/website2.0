@@ -9,6 +9,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<title>Nicole Calace</title>
 	</head>
 
@@ -22,7 +23,7 @@
 
 		<div class="header" id="links">
 			<ul class="navbar">
-				<li> <div class="selectedpage"> <a href="index.html">ux design</a> </div> </li>
+				<li> <div class="selectedpage"> <a href="index.html">product design</a> </div> </li>
 				<li> <div class="unselectedpage"> <a href="graphicdesign.html">graphic design</a> </div> </li>
 				<li> <div class="unselectedpage"> <a href="about.html">about</a> </div> </li>
 			</ul>
@@ -33,14 +34,14 @@
 			<h1>Kick.it</h1>
 			<h2>UX Design</h2>
 			<h3>December 2013</h3>
-			<p>Kick.it is a small startup building a mobile application that makes it fast and easy to plan informal events with friends. I started my work for Kick.it after a few months of its existance, to assist in a re-design of the product. I worked mostly on visual design.</p>
+			<p>Kick.it is a small startup building a mobile application that makes it fast and easy to plan informal events with friends. I started my work for Kick.it after a few months of its existence, to assist in a re-design of the product. I worked mostly on visual design.</p>
 
 			<hr>
 			<div class="row">
 				<div class="large-7 columns moreinfo">
 					<h2>Interaction Design</h2>
 					<p>When I joined the project, the product only allowed users to invite their friends to events privately. However, user feedback made it clear that users would like the ability to create events open to all their friends. </p>
-					<p>We created user scenarios to aid in designing the feature. For example, a user might want to get lunch with friends, but has no idea who is free. This user would create an "open invite" for lunch that all of his friends could see and join. Based off this user scenario, I worked with the team's engineers on wireframes to figure how this feature could be intergrated with the existing product.</p>
+					<p>We created user scenarios to aid in designing the feature. For example, a user might want to get lunch with friends, but has no idea who is free. This user would create an "open invite" for lunch that all of his friends could see and join. Based off this user scenario, I worked with the team's engineers on wireframes to figure how this feature could be integrated with the existing product.</p>
 				</div>
 				<div class="large-5 columns">
 					<img src="../img/kickit/kickit-wireframes.jpg">
@@ -69,6 +70,23 @@
 				<p><a href="index.html">return to portfolio</a></p>
 			</div>
 		</div>
+
+	<script>
+		$(function(){ // document ready
+		  var stickyTop = $('#links').offset().top; // returns number 
+		  $(window).scroll(function(){ // scroll event  
+		    var windowTop = $(window).scrollTop(); // returns number
+		    if (stickyTop < windowTop) {
+		      $('#links').css({ position: 'fixed', top: 0 });
+		      $('.maincontent').css({ marginTop: '5em'});
+		    }
+		    else {
+		      $('#links').css('position','static');
+		      $('.maincontent').css({ marginTop: '1.5em'});
+		    }
+		  });
+		});
+	</script>
 		
 </body>
 </html>

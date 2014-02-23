@@ -43,6 +43,10 @@ h1, h2{
 	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+.alt h2{
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 h3, h4, h5, h6{
 	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: 600;
@@ -67,7 +71,13 @@ h2, h3, h4, h5, h6{
 		padding-right: 5%;
 	}
 	.maincontent{
-		max-width: 300px;
+		margin-top: 1.5em;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	#homecontent{
+		max-width: 320px;
 		margin: auto;
 		margin-top: 1.5em;
 	}
@@ -86,7 +96,16 @@ h2, h3, h4, h5, h6{
 		margin-right: 23%;
 		margin-left: 23%;
 	}
-}  
+}
+
+.maincontent{
+	z-index: 0;
+}
+
+#links{
+	width: 100%;
+	z-index: 3;
+}
 
 .namenav{
 		border: 2px solid;
@@ -255,4 +274,43 @@ h2, h3, h4, h5, h6{
 
 .bottommargin{
 	margin-bottom: 1em;
+}
+
+.fixed{
+	position: fixed;
+	top:0;
+}
+
+.indent{
+	margin-left: 1em;
+	margin-bottom: 1.5em;
+}
+
+.button{
+	color: white;
+	border: 2px solid;
+	border-color: #009ca6;
+	background-color: #009ca6;
+	padding: .5em;
+	display: inline-block;
+	margin-right: 1em;
+	float: left;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	width: 8em;
+	text-align: center;
+}
+
+.button a{
+	color: white;
+}
+
+.button a:hover{
+	color: white;
+}
+
+@media (max-width: 1024px) {
+	.medremove{
+		display: none;
+	}
 }
