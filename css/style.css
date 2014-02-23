@@ -1,5 +1,5 @@
 body{
-	background-color: #151515;
+	background-color: #202933;
 	color: white;
 	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: 300;
@@ -14,11 +14,11 @@ b{
 
 a{
 	text-decoration: none;
-	color: #009ca6;
+	color: #00768e;
 }
 
 a:hover{
-	color: #009ca6;
+	color: #00768e;
 	text-decoration: underline;
 }
 
@@ -125,7 +125,7 @@ h2, h3, h4, h5, h6{
 
 .header{
 	margin: 0;
-	background-color: #009ca6;
+	background-color: #00768e;
 	color: white;
 	background-image: url("../img/pattern-blue.jpg");
 }
@@ -183,14 +183,14 @@ h2, h3, h4, h5, h6{
 	max-width: 300px;
 	width: 100%;
 	color: white;
-	background-color: #009ca6;
+	background-color: #00768e;
 }
 
 .arrow{
 	margin-top: 20%;
 	position: fixed;
 	color: white;
-	background-color: #009ca6;
+	background-color: #00768e;
 	padding: 3em;
 	opacity: .8;
 }
@@ -289,8 +289,8 @@ h2, h3, h4, h5, h6{
 .button{
 	color: white;
 	border: 2px solid;
-	border-color: #009ca6;
-	background-color: #009ca6;
+	border-color: #00768e;
+	background-color: #00768e;
 	padding: .5em;
 	display: inline-block;
 	margin-right: 1em;
