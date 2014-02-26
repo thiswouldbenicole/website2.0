@@ -324,14 +324,14 @@ h2, h3, h4, h5, h6{
 
 .hoverfade li:hover{
 	opacity: .7;
-	transition: opacity .05s ease-in-out;
-	-moz-transition: opacity .05s ease-in-out;
-	-webkit-transition: opacity .05s ease-in-out;
+	transition: opacity .1s ease-in-out;
+	-moz-transition: opacity .1s ease-in-out;
+	-webkit-transition: opacity .1s ease-in-out;
 }
 
 #missionstatement{
 	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	margin-bottom: 1em;
+	margin-bottom: .75em;
 }
 
 #circlepic{
@@ -342,13 +342,9 @@ h2, h3, h4, h5, h6{
 	margin-bottom: 0;
 }
 
-#centeredabout{
-	text-align: center;
-}
-
 #sociallinks{
-	margin-top: 1.5em;
-	margin-bottom: 1.5em;
+	margin-top: .75em;
+	margin-bottom: .75em;
 }
 
 #topgap{
