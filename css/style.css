@@ -314,3 +314,47 @@ h2, h3, h4, h5, h6{
 		display: none;
 	}
 }
+
+.hoverfade li{
+	opacity: 1.0;
+	transition: opacity .1s ease-in-out;
+	-moz-transition: opacity .1s ease-in-out;
+	-webkit-transition: opacity .1s ease-in-out;
+}
+
+.hoverfade li:hover{
+	opacity: .7;
+	transition: opacity .05s ease-in-out;
+	-moz-transition: opacity .05s ease-in-out;
+	-webkit-transition: opacity .05s ease-in-out;
+}
+
+#missionstatement{
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	margin-bottom: 1em;
+}
+
+#circlepic{
+	margin-bottom: 1em;
+}
+
+#abouthi{
+	margin-bottom: 0;
+}
+
+#centeredabout{
+	text-align: center;
+}
+
+#sociallinks{
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+#topgap{
+	margin-top: 1em;
+}
+
+.about a:hover{
+	text-decoration: none;
+}
