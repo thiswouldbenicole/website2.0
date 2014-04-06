@@ -177,10 +177,10 @@ h2, h3, h4, h5, h6{
 	padding: .5em;
 }
 
-.grid span{
+.gridlabel{
 	padding: 1em;
 	display:block;
-	max-width: 300px;
+	max-width: 400px;
 	width: 100%;
 	color: white;
 	background-color: #00768e;
@@ -268,7 +268,7 @@ h2, h3, h4, h5, h6{
 	margin-bottom: .5em;
 }
 
-#topspace{
+.topspace{
 	margin-top: 1em;
 }
 
